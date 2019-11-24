@@ -1,0 +1,12 @@
+C:\Users\kowalczyka\Devs_School\PS_Client\PS_Client\bin\Debug\PS_Client.exe.config
+C:\Users\kowalczyka\Devs_School\PS_Client\PS_Client\bin\Debug\PS_Client.exe
+C:\Users\kowalczyka\Devs_School\PS_Client\PS_Client\bin\Debug\PS_Client.pdb
+C:\Users\kowalczyka\Devs_School\PS_Client\PS_Client\obj\Debug\PS_Client.csprojAssemblyReference.cache
+C:\Users\kowalczyka\Devs_School\PS_Client\PS_Client\obj\Debug\PS_Client.exe
+C:\Users\kowalczyka\Devs_School\PS_Client\PS_Client\obj\Debug\PS_Client.pdb
+C:\Users\kowalczyka\Devs_School\Programowanie Seciowe\PS_Client\PS_Client\bin\Debug\PS_Client.exe.config
+C:\Users\kowalczyka\Devs_School\Programowanie Seciowe\PS_Client\PS_Client\bin\Debug\PS_Client.exe
+C:\Users\kowalczyka\Devs_School\Programowanie Seciowe\PS_Client\PS_Client\bin\Debug\PS_Client.pdb
+C:\Users\kowalczyka\Devs_School\Programowanie Seciowe\PS_Client\PS_Client\obj\Debug\PS_Client.csprojAssemblyReference.cache
+C:\Users\kowalczyka\Devs_School\Programowanie Seciowe\PS_Client\PS_Client\obj\Debug\PS_Client.exe
+C:\Users\kowalczyka\Devs_School\Programowanie Seciowe\PS_Client\PS_Client\obj\Debug\PS_Client.pdb

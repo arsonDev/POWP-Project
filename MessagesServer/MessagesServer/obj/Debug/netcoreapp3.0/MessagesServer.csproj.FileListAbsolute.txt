@@ -1,0 +1,11 @@
+C:\Users\kowalczyka\Devs_School\Messages\MessagesServer\MessagesServer\bin\Debug\netcoreapp3.0\MessagesServer.exe
+C:\Users\kowalczyka\Devs_School\Messages\MessagesServer\MessagesServer\bin\Debug\netcoreapp3.0\MessagesServer.deps.json
+C:\Users\kowalczyka\Devs_School\Messages\MessagesServer\MessagesServer\bin\Debug\netcoreapp3.0\MessagesServer.runtimeconfig.json
+C:\Users\kowalczyka\Devs_School\Messages\MessagesServer\MessagesServer\bin\Debug\netcoreapp3.0\MessagesServer.runtimeconfig.dev.json
+C:\Users\kowalczyka\Devs_School\Messages\MessagesServer\MessagesServer\bin\Debug\netcoreapp3.0\MessagesServer.dll
+C:\Users\kowalczyka\Devs_School\Messages\MessagesServer\MessagesServer\bin\Debug\netcoreapp3.0\MessagesServer.pdb
+C:\Users\kowalczyka\Devs_School\Messages\MessagesServer\MessagesServer\obj\Debug\netcoreapp3.0\MessagesServer.AssemblyInfoInputs.cache
+C:\Users\kowalczyka\Devs_School\Messages\MessagesServer\MessagesServer\obj\Debug\netcoreapp3.0\MessagesServer.AssemblyInfo.cs
+C:\Users\kowalczyka\Devs_School\Messages\MessagesServer\MessagesServer\obj\Debug\netcoreapp3.0\MessagesServer.dll
+C:\Users\kowalczyka\Devs_School\Messages\MessagesServer\MessagesServer\obj\Debug\netcoreapp3.0\MessagesServer.pdb
+C:\Users\kowalczyka\Devs_School\Messages\MessagesServer\MessagesServer\obj\Debug\netcoreapp3.0\MessagesServer.csprojAssemblyReference.cache
