@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/white</color>
+    <color name="colorPrimaryDark">@color/white</color>
+    <color name="colorAccent">#ffff8b</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="main_color">#0099cc</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#2196f3</color>
+    <color name="blue_light">#6ec6ff</color>
+    <color name="blue_dark">#2196f3</color>
+    <color name="cyan">#26c6da</color>
+    <color name="cyan_light">#6ff9ff</color>
+    <color name="cyan_dark">#0095a8</color>
+    <color name="teal">#26a69a</color>
+    <color name="teal_light">#64d8cb</color>
+    <color name="teal_dark">#00766c</color>
+    <color name="yellow">#ffee58</color>
+    <color name="yellow_light">#ffff8b</color>
+    <color name="yellow_dark">#c9bc1f</color>
+    <color name="green_light">#80e27e</color>
+    <color name="green">#4caf50</color>
+    <color name="green_dark">#087f23</color>
+    <color name="orange">#ffc107</color>
+    <color name="orange_light">#fff350</color>
+    <color name="orange_dark">#c79100</color>
+    <color name="red">#ff9800</color>
+    <color name="red_light">#ff9800</color>
+    <color name="red_dark">#c63f17</color>
+</resources>

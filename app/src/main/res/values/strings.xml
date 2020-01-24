@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Heng</string>
+    <string name="mainsubtitle">Aplikacja stworzona po to aby pomóc Ci stać się lepszym człowiekiem !</string>
+    <string name="main_title">Witaj w Heng</string>
+    <string name="second_main_title">Pomożemy ci zwalczyć uzależnienia</string>
+    <string name="second_main_subtitle">Odpowiedz na kilka prostych pytań</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main_menu">MainMenu</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="next">Dalej</string>
+    <string name="letsGo">Zaczynamy !</string>
+    <string name="done">wykonano</string>
+    <string name="todo">wykonaj</string>
+</resources>
