@@ -1,5 +1,5 @@
 # Heng
-Aplikacja która pomoże Ci zmienić swoje przyzwyczajenia i przypominać o nauce nowych umiejętności.
+Aplikacja która pomoże Ci w wykonywaniu zadań.
 
 ## Użyte technologie i frameworki
 * Kotlin
