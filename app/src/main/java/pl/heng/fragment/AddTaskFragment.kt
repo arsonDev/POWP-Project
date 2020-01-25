@@ -64,7 +64,7 @@ class AddTaskFragment : BottomSheetDialogFragment() {
     }
 
     private fun notifyHourChange(){
-        val picker = TimePickerDialog(this.context, R.style.AppTheme,
+        val picker = TimePickerDialog(this.context, R.style.DialogTheme,
             TimePickerDialog.OnTimeSetListener { view, hourOfDay, minute ->
                 viewModel.notifyTime.set(LocalTime.of(hourOfDay,minute).format(DateTimeFormatter.ofPattern("hh:mm")))
             }, LocalDateTime.now().hour, LocalDateTime.now().minute,true)
@@ -78,9 +78,10 @@ class AddTaskFragment : BottomSheetDialogFragment() {
         val month = cldr.get(Calendar.MONTH)
         val year = cldr.get(Calendar.YEAR)
 
-        val picker = DatePickerDialog(this.context,
+        val picker = DatePickerDialog(this.context,R.style.DialogTheme,
             DatePickerDialog.OnDateSetListener { view, year, monthOfYear, dayOfMonth ->
-                viewModel.doesDate.set(LocalDate.of(year,month,dayOfMonth).format(DateTimeFormatter.ofPattern("dd.mm.yyyy")))
+
+                viewModel.doesDate.set(LocalDate.of(year,monthOfYear+1,dayOfMonth).format(DateTimeFormatter.ofPattern("DD.MM.YYYY")))
             }, year, month, day
         )
         picker.show()

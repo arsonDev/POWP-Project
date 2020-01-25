@@ -63,7 +63,7 @@ class MainMenu : AppCompatActivity() {
         viewModel = ViewModelProviders.of(this).get(TasksViewModel(application)::class.java)
         activityBinding.vm = viewModel
 
-        viewModel.getHabits().observe(this, Observer<List<Task>> { habits ->
+        viewModel.getTasks().observe(this, Observer<List<Task>> { habits ->
             if (habits.isEmpty())
                 viewModel.emptyVisible.set(true)
             else {

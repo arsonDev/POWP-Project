@@ -32,14 +32,15 @@ class AddTaskViewModel(application: Application) : AndroidViewModel(application)
     private val repository by lazy { Repo(TaskRepository(application)) }
 
     fun addNewTask() {
+        // przyklad Buildera
         val habit =
-            Task(
-                taskName.get() ?: "TestZadania",
-                categoryName.get() ?: "TestKategori",
-                doesDate.get().toString(),
-                notifyTime.get().toString(),
-                LocalDate.now().toString()
-            )
+            Task.Builder()
+                .setName(taskName.get() ?: "TestZadania")
+                .setCategory(categoryName.get() ?: "TestKategori")
+                .setDoesDate(doesDate.get().toString())
+                .setRemindHour(notifyTime.get().toString())
+                .setCreateDate(LocalDate.now().toString())
+                .build()
         viewModelScope.launch {
             //TODO: przyklad DI - oznaczone aby było widoczne
             repository.insert(habit)

@@ -47,7 +47,7 @@ class TaskListAdapter(layoutId : Int, viewModel : TasksViewModel) : RecyclerView
 class HabitViewHolder(val binding: ViewDataBinding) : RecyclerView.ViewHolder(binding.root) {
 
     fun bind(viewModel : TasksViewModel, position: Int){
-        viewModel.getHabitAt(position)
+        viewModel.getTaskAt(position)
         binding.setVariable(BR.viewModel, viewModel)
         binding.setVariable(BR.position, position)
         binding.executePendingBindings()

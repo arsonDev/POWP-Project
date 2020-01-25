@@ -23,11 +23,11 @@ class TasksViewModel(application: Application) : AndroidViewModel(application) {
     val emptyVisible = ObservableBoolean(true)
     val notifiyMessage = MutableLiveData<String>("")
 
-    fun getHabits() = habitRepo.getHabitList()
+    fun getTasks() = habitRepo.getHabitList()
 
     fun getAdapter() = adapter
 
-    fun getHabitAt(position: Int) = adapter.getHabit(position)
+    fun getTaskAt(position: Int) = adapter.getHabit(position)
 
     fun setHabitsInAdapter(breeds: List<Task>) {
         this.adapter.setHabits(breeds)
@@ -35,24 +35,24 @@ class TasksViewModel(application: Application) : AndroidViewModel(application) {
     }
 
     fun onItemClick(position: Int) {
-        selected.value = getHabitAt(position)
+        selected.value = getTaskAt(position)
     }
 
     fun onItemClickDone(position: Int) {
-        val habit = getHabitAt(position)
+        val task = getTaskAt(position)
         viewModelScope.launch {
-            val done = habitDoneRepository.getHabitDoneToday(habit.uid, LocalDate.now())
+            val done = habitDoneRepository.getHabitDoneToday(task.uid, LocalDate.now())
             if (!done) {
-                val habitDone = TaskDoneHistory(habit.uid,true,LocalDate.now().toString())
-                habit.buttonText = "wykonano"
+                val habitDone = TaskDoneHistory(task.uid,true,LocalDate.now().toString())
+                task.buttonText = "wykonano"
 
                 habitDoneRepository.insert(habitDone)
-                notifiyMessage.value = "Brawo za wykonanie zadania : ${habit.name} #${habit.category}"
+                notifiyMessage.value = "Brawo za wykonanie zadania : ${task.name} #${task.category}"
             }else{
-                notifiyMessage.value = "Dzisiaj wykonano już zadanie : ${habit.name} #${habit.category}"
-                habit.buttonText = "wykonaj"
+                notifiyMessage.value = "Dzisiaj wykonano już zadanie : ${task.name} #${task.category}"
+                task.buttonText = "wykonaj"
             }
-            habit.done = done
+            task.done = done
         }
     }
 }
