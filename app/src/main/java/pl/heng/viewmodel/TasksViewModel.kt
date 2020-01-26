@@ -16,14 +16,14 @@ import java.time.LocalDate
 
 class TasksViewModel(application: Application) : AndroidViewModel(application) {
 
-    private val habitRepo = TaskRepository(application)
-    private val habitDoneRepository = TaskDoneRepository(application)
+    private val taskRepo = TaskRepository(application)
+    private val taskDoneRepository = TaskDoneRepository(application)
     private val adapter = TaskListAdapter(R.layout.habit_item, this)
     val selected = MutableLiveData<Task>()
     val emptyVisible = ObservableBoolean(true)
     val notifiyMessage = MutableLiveData<String>("")
 
-    fun getTasks() = habitRepo.getHabitList()
+    fun getTasks() = taskRepo.getHabitList()
 
     fun getAdapter() = adapter
 
@@ -41,12 +41,12 @@ class TasksViewModel(application: Application) : AndroidViewModel(application) {
     fun onItemClickDone(position: Int) {
         val task = getTaskAt(position)
         viewModelScope.launch {
-            val done = habitDoneRepository.getHabitDoneToday(task.uid, LocalDate.now())
+            val done = taskDoneRepository.getHabitDoneToday(task.uid, LocalDate.now())
             if (!done) {
                 val habitDone = TaskDoneHistory(task.uid,true,LocalDate.now().toString())
                 task.buttonText = "wykonano"
 
-                habitDoneRepository.insert(habitDone)
+                taskDoneRepository.insert(habitDone)
                 notifiyMessage.value = "Brawo za wykonanie zadania : ${task.name} #${task.category}"
             }else{
                 notifiyMessage.value = "Dzisiaj wykonano już zadanie : ${task.name} #${task.category}"
